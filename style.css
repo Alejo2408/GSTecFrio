@@ -55,7 +55,6 @@ header h1 {
     margin-right: 15px;
 }
 
-
 header p {
     font-family: 'Roboto', sans-serif; /* Fuente para el subtítulo del encabezado */
     margin: 0.5rem 0 0;
@@ -211,7 +210,35 @@ nav ul li a:hover {
 }
 
 .facebook-button:hover {
-    background-color: #10036d; /* Color más oscuro al pasar el mouse */
+    background-color: #2812cb; /* Color más oscuro al pasar el mouse */
+}
+
+/* Nuevo estilo para la sección de medios de pago */
+#metodos-pago {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#metodos-pago h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.metodos-pago-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.metodos-pago-container img {
+    height: 40px;
+    max-width: 100px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    border-radius: 50%; /* Esta es la propiedad que redondea los logos */
 }
 
 /* Pie de página */
@@ -222,6 +249,7 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
 
 
 
