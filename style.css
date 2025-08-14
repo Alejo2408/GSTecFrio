@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+
 /* Estilos Generales */
 :root {
     --primary-color: #004d99; /* Azul oscuro */
@@ -8,7 +10,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Fuente principal para el cuerpo */
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
@@ -42,6 +44,7 @@ header {
 }
 
 header h1 {
+    font-family: 'Montserrat', sans-serif; /* Fuente específica para el título */
     color: var(--white-color);
     margin: 0;
     font-size: 2.5rem;
@@ -54,6 +57,7 @@ header h1 {
 
 
 header p {
+    font-family: 'Roboto', sans-serif; /* Fuente para el subtítulo del encabezado */
     margin: 0.5rem 0 0;
     font-size: 1.2rem;
 }
@@ -70,6 +74,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: 'Montserrat', sans-serif; /* Fuente específica para la navegación */
     color: var(--white-color);
     text-decoration: none;
     font-weight: bold;
@@ -91,11 +96,14 @@ nav ul li a:hover {
 }
 
 #hero h2 {
+    font-family: 'Roboto', sans-serif; /* Fuente para el subtítulo principal */
+    font-weight: 700;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 #hero p {
+    font-family: 'Roboto', sans-serif; /* Fuente para el texto del héroe */
     font-size: 1.2rem;
     max-width: 800px;
     margin: auto;
@@ -127,6 +135,8 @@ nav ul li a:hover {
 }
 
 .service-box h3 {
+    font-family: 'Roboto', sans-serif; /* Fuente para los títulos de servicio */
+    font-weight: 700;
     margin-top: 0;
     color: var(--primary-color);
 }
@@ -146,6 +156,7 @@ nav ul li a:hover {
 }
 
 .contact-info p {
+    font-family: 'Roboto', sans-serif; /* Fuente para la información de contacto */
     margin: 0.5rem 0;
     font-size: 1.1rem;
 }
@@ -167,7 +178,6 @@ nav ul li a:hover {
     background-color: #128C7E; /* Verde más oscuro al pasar el mouse */
 }
 
-/* Nuevo estilo para el botón de Instagram */
 .instagram-button {
     display: inline-block;
     background: #c13584; /* Color de Instagram */
@@ -186,7 +196,6 @@ nav ul li a:hover {
     background-color: #833ab4; /* Color más oscuro al pasar el mouse */
 }
 
-/* Nuevo estilo para el botón de Facebook */
 .facebook-button {
     display: inline-block;
     background: #2812cb; /* Color de Facebook */
@@ -213,5 +222,6 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
 
 
