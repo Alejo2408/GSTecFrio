@@ -213,7 +213,7 @@ nav ul li a:hover {
     background-color: #2812cb; /* Color más oscuro al pasar el mouse */
 }
 
-/* Nuevo estilo para la sección de medios de pago */
+/* Estilo para la sección de medios de pago */
 #metodos-pago {
     padding-top: 2rem;
     text-align: center;
@@ -238,7 +238,7 @@ nav ul li a:hover {
     height: 40px;
     max-width: 100px;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
-    border-radius: 20%; /* Esta es la propiedad que redondea los logos */
+    border-radius: 20%;
 }
 
 /* Pie de página */
@@ -250,9 +250,29 @@ footer {
     margin-top: 2rem;
 }
 
+/* Estilo para el botón flotante de WhatsApp */
+.whatsapp-flotante {
+    position: fixed; /* Mantiene el icono en una posición fija en la pantalla */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la derecha */
+    z-index: 1000; /* Asegura que el icono esté por encima de otros elementos */
+    width: 60px; /* Ancho del icono */
+    height: 60px; /* Alto del icono */
+    border-radius: 50%; /* Para que sea circular */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
 
+.whatsapp-flotante:hover {
+    transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
+}
 
-
-
+.whatsapp-flotante img {
+    width: 100%;
+    height: auto;
+}
 
 
