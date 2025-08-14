@@ -238,7 +238,7 @@ nav ul li a:hover {
     height: 40px;
     max-width: 100px;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
-    border-radius: 50%; /* Esta es la propiedad que redondea los logos */
+    border-radius: 20%; /* Esta es la propiedad que redondea los logos */
 }
 
 /* Pie de página */
@@ -249,6 +249,7 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
 
 
 
