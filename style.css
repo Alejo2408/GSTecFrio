@@ -211,7 +211,7 @@ nav ul li a:hover {
 }
 
 .facebook-button:hover {
-    background-color: #2812cb; /* Color más oscuro al pasar el mouse */
+    background-color: #10036d; /* Color más oscuro al pasar el mouse */
 }
 
 /* Pie de página */
@@ -222,6 +222,7 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
 
 
 
