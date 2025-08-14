@@ -35,7 +35,6 @@ header {
     text-align: center;
 }
 
-/* Estilo para centrar el logo y el título */
 .header-content {
     display: flex;
     align-items: center;
@@ -49,8 +48,8 @@ header h1 {
 }
 
 .logo {
-    height: 80px; /* Aquí puedes cambiar el tamaño del logo */
-    margin-right: 30px; /* Espacio entre el logo y el texto */
+    height: 60px;
+    margin-right: 15px;
 }
 
 
@@ -166,6 +165,25 @@ nav ul li a:hover {
 
 .whatsapp-button:hover {
     background-color: #128C7E; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Nuevo estilo para el botón de Instagram */
+.instagram-button {
+    display: inline-block;
+    background: #c13584; /* Color de Instagram */
+    color: var(--white-color);
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-left: 10px; /* Espacio entre los botones */
+    transition: background-color 0.3s ease;
+}
+
+.instagram-button:hover {
+    background-color: #833ab4; /* Color más oscuro al pasar el mouse */
 }
 
 /* Pie de página */
