@@ -1,109 +1,309 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Técnico de Refrigeración - GustiTec</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
 
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <img src="Imagen/Logo Oficial.jpeg" alt="Logo de la empresa" class="logo">
-                <h1>GustiTec</h1>
-            </div>
-            <p>Técnico Especializado en Refrigeración</p>
-            
-            <button class="menu-toggle" aria-label="Abrir menú de navegación">
-                &#9776;
-            </button>
+/* Estilos Generales */
+:root {
+    --primary-color: #004d99; /* Azul oscuro */
+    --secondary-color: #f7f7f7; /* Gris claro */
+    --highlight-color: #ff6600; /* Naranja */
+    --text-color: #333;
+    --white-color: #fff;
+}
 
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
 
-    <main>
-        <div class="container">
-            <section id="inicio">
-                <div id="hero">
-                    <h2>Soluciones Profesionales para tu Refrigeración</h2>
-                    <p>Ofrecemos servicio técnico de calidad para aires acondicionados, cámaras de frío y freezers. <br>¡Contáctanos para un presupuesto sin cargo!</p>
-                </div>
-            </section>
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
 
-            <section id="servicios">
-                <h2 style="text-align: center;">Nuestros Servicios</h2>
-                <div class="services-grid">
-                    <div class="service-box">
-                        <h3>Aire Acondicionado</h3>
-                        <p>Instalación, mantenimiento y reparación de equipos de aire acondicionado para hogares y oficinas.</p>
-                    </div>
-                    <div class="service-box">
-                        <h3>Cámaras de Frío</h3>
-                        <p>Reparación y mantenimiento de cámaras frigoríficas industriales y comerciales.</p>
-                    </div>
-                    <div class="service-box">
-                        <h3>Freezers</h3>
-                        <p>Servicio técnico para freezers comerciales y domésticos de todas las marcas.</p>
-                    </div>
-                </div>
-            </section>
+h1, h2, h3 {
+    color: var(--primary-color);
+}
 
-            <section id="contacto">
-                <h2 style="text-align: center;">Contacto</h2>
-                <div class="contact-info">
-                    <p>📞 <strong>Teléfono:</strong> [Tu Número de Teléfono]</p>
-                    <p>✉️ <strong>Email:</strong> [Tu Email]</p>
-                    <p>📍 <strong>Zona de Cobertura:</strong> [Tu Área de Servicio]</p>
-                    
-                    <a href="https://wa.me/[Tu Número de Teléfono]?text=Hola%20estoy%20interesado%20en%20sus%20servicios%20de%20refrigeración." class="whatsapp-button" target="_blank">WhatsApp</a>
-                    <a href="https://www.instagram.com/gusti_tec/" class="instagram-button" target="_blank">Instagram</a>
-                    <a href="https://www.facebook.com/profile.php?id=61575362645364&ref=pl_edit_xav_ig_profile_page_web" class="facebook-button" target="_blank">Facebook</a>
-                </div>
-            </section>
+/* Encabezado y Navegación (Ahora siempre desplegable) */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1.5rem 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-            <section id="metodos-pago">
-                <h2 style="text-align: center;">Medios de Pago</h2>
-                <div class="metodos-pago-container">
-                    <img src="Imagen/Visa.jpg" alt="Logo Visa">
-                    <img src="Imagen/Mastercard.jpg" alt="Logo Mastercard">
-                    <img src="Imagen/Mercado Pago.png" alt="Logo Mercado Pago">
-                    <img src="Imagen/Pago efectivo.jpg" alt="Logo Efectivo">
-                </div>
-            </section>
-        </div>
-    </main>
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 GustiTec. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white-color);
+    margin: 0;
+    font-size: 2.5rem;
+}
 
-    <a href="https://wa.me/[Tu Número de Teléfono]?text=Hola%20estoy%20interesado%20en%20sus%20servicios%20de%20refrigeración." class="whatsapp-flotante" target="_blank">
-        <img src="Imagen/WhatsApp_icon.png" alt="WhatsApp Flotante">
-    </a>
+.logo {
+    height: 100px;
+    margin-right: 20px;
+}
 
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navMenu = document.querySelector('.nav-menu');
+header p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    display: none; /* Oculta el subtítulo en todas las vistas para un diseño más limpio */
+}
 
-        if (menuToggle && navMenu) {
-            menuToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-            });
-        }
-    </script>
-</body>
-</html>
+/* Muestra el botón de hamburguesa por defecto */
+.menu-toggle {
+    display: block;
+    color: var(--white-color);
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1001;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Oculta la lista del menú por defecto */
+.nav-menu {
+    display: none;
+    flex-direction: row; /* Menú horizontal */
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    /* Fondo semitransparente */
+    background-color: rgba(0, 77, 153, 0.9);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+/* Muestra el menú cuando tiene la clase 'active' */
+.nav-menu.active {
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 1rem; /* Espacio horizontal entre los elementos */
+    list-style-type: none;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Resto de los estilos de tu página ... (sin cambios) */
+#hero {
+    background: var(--white-color);
+    text-align: center;
+    padding: 4rem 0;
+    border-radius: 8px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#hero h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+#servicios {
+    padding: 2rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-box {
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.service-box h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+#contacto {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contact-info {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: var(--white-color);
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+.instagram-button {
+    display: inline-block;
+    background: #c13584;
+    color: var(--white-color);
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.instagram-button:hover {
+    background-color: #833ab4;
+}
+
+.facebook-button {
+    display: inline-block;
+    background: #2812cb;
+    color: var(--white-color);
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.facebook-button:hover {
+    background-color: #11056b;
+}
+
+#metodos-pago {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#metodos-pago h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.metodos-pago-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.metodos-pago-container img {
+    height: 40px;
+    max-width: 100px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    border-radius: 20%;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-flotante:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-flotante img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 
