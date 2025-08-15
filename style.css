@@ -177,11 +177,11 @@ header p {
 }
 
 .camaras-de-frio {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/camaras_de_frio.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/camara\ de\ frio.png') no-repeat center center/cover;
 }
 
 .camaras-de-frio:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('Imagen/camaras_de_frio.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('Imagen/camara\ de\ frio.png') no-repeat center center/cover;
 }
 
 .freezers {
@@ -368,6 +368,7 @@ footer {
         color: #fff;
     }
 }
+
 
 
 
