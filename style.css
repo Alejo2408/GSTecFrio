@@ -109,12 +109,13 @@ header p {
 
 /* Sección Hero */
 #hero {
-    background: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/Fondo\ de\ solucion.jpeg') no-repeat center center/cover;
     text-align: center;
-    padding: 4rem 0;
-    border-radius: 8px;
+    padding: 8rem 0;
+    border-radius: 10px;
     margin: 2rem 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #fff; /* Asegura que el texto sea blanco y se lea bien */
 }
 
 #hero h2 {
@@ -185,11 +186,11 @@ header p {
 }
 
 .freezers {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/freezers.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/Heladeras\ Industriales.jpeg') no-repeat center center/cover;
 }
 
 .freezers:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('Imagen/freezers.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('Imagen/Heladeras\ Industriales.jpeg') no-repeat center center/cover;
 }
 
 .service-link {
@@ -368,6 +369,7 @@ footer {
         color: #fff;
     }
 }
+
 
 
 
