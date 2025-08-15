@@ -142,13 +142,17 @@ header p {
     gap: 2rem;
 }
 
+/* Estilos base para todas las cajas de servicio */
 .service-box {
-    background: #fff;
+    background-color: #fff; /* Fondo de respaldo */
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+    height: 300px; /* Tamaño fijo para que las imágenes se vean bien */
+    position: relative;
+    overflow: hidden;
 }
 
 .service-box:hover {
@@ -156,11 +160,36 @@ header p {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-.service-box h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    margin-top: 0;
-    color: #004d99;
+.service-box h3,
+.service-box p {
+    position: relative;
+    z-index: 2; /* Para que el texto siempre esté visible */
+    color: #fff; /* Color de texto blanco para que resalte */
+}
+
+/* Estilos para el fondo de cada servicio */
+.aire-acondicionado {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/Aire.jpg') no-repeat center center/cover;
+}
+
+.aire-acondicionado:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('Imagen/Aire.jpg') no-repeat center center/cover;
+}
+
+.camaras-de-frio {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/camaras_de_frio.jpg') no-repeat center center/cover;
+}
+
+.camaras-de-frio:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('Imagen/camaras_de_frio.jpg') no-repeat center center/cover;
+}
+
+.freezers {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/freezers.jpg') no-repeat center center/cover;
+}
+
+.freezers:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('Imagen/freezers.jpg') no-repeat center center/cover;
 }
 
 .service-link {
@@ -192,27 +221,27 @@ header p {
 .social-buttons-container {
     display: flex;
     justify-content: center;
-    gap: 1.5rem; /* Espacio entre los botones */
+    gap: 1.5rem;
     margin-top: 1.5rem;
 }
 
 .social-button {
     display: inline-block;
-    width: 40px; /* Tamaño del icono (anteriormente 40px) */
-    height: 40px;
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s ease;
-    border-radius: 50%; /* Esto hace que los logos sean redondos */
-    overflow: hidden; /* Esto oculta las partes cuadradas que puedan quedar */
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .social-button:hover {
-    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+    transform: scale(1.1);
 }
 
 .social-button img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la imagen para cubrir el área del círculo */
+    object-fit: cover;
 }
 
 /* Sección Medios de Pago */
@@ -339,6 +368,7 @@ footer {
         color: #fff;
     }
 }
+
 
 
 
