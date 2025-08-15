@@ -1,20 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
 
 /* Estilos Generales */
-:root {
-    --primary-color: #004d99; /* Azul oscuro */
-    --secondary-color: #f7f7f7; /* Gris claro */
-    --highlight-color: #ff6600; /* Naranja */
-    --text-color: #333;
-    --white-color: #fff;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: #f7f7f7;
+    color: #333;
     line-height: 1.6;
 }
 
@@ -26,13 +18,13 @@ body {
 }
 
 h1, h2, h3 {
-    color: var(--primary-color);
+    color: #004d99;
 }
 
-/* Encabezado y Navegación (Ahora siempre desplegable) */
+/* Encabezado y Navegación */
 header {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+    background-color: #004d99;
+    color: #fff;
     padding: 1.5rem 0;
     text-align: center;
     position: relative;
@@ -50,27 +42,27 @@ header {
 
 header h1 {
     font-family: 'Montserrat', sans-serif;
-    color: var(--white-color);
+    color: #fff;
     margin: 0;
     font-size: 2.5rem;
 }
 
 .logo {
-    height: 100px;
+    height: 150px;
     margin-right: 20px;
+    border-radius: 15px;
 }
 
 header p {
     font-family: 'Roboto', sans-serif;
     margin: 0.5rem 0 0;
     font-size: 1.2rem;
-    display: none; /* Oculta el subtítulo en todas las vistas para un diseño más limpio */
+    display: none;
 }
 
-/* Muestra el botón de hamburguesa por defecto */
 .menu-toggle {
     display: block;
-    color: var(--white-color);
+    color: #fff;
     font-size: 2rem;
     cursor: pointer;
     background: none;
@@ -82,14 +74,12 @@ header p {
     transform: translateY(-50%);
 }
 
-/* Oculta la lista del menú por defecto */
 .nav-menu {
     display: none;
-    flex-direction: row; /* Menú horizontal */
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     text-align: center;
-    /* Fondo semitransparente */
     background-color: rgba(0, 77, 153, 0.9);
     position: absolute;
     top: 100%;
@@ -100,27 +90,26 @@ header p {
     margin: 0;
 }
 
-/* Muestra el menú cuando tiene la clase 'active' */
 .nav-menu.active {
     display: flex;
 }
 
 .nav-menu li {
-    margin: 0 1rem; /* Espacio horizontal entre los elementos */
+    margin: 0 1rem;
     list-style-type: none;
 }
 
 .nav-menu li a {
     display: block;
     padding: 0.5rem 1rem;
-    color: var(--white-color);
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Resto de los estilos de tu página ... (sin cambios) */
+/* Sección Hero */
 #hero {
-    background: var(--white-color);
+    background: #fff;
     text-align: center;
     padding: 4rem 0;
     border-radius: 8px;
@@ -142,6 +131,7 @@ header p {
     margin: auto;
 }
 
+/* Sección Servicios */
 #servicios {
     padding: 2rem 0;
 }
@@ -153,7 +143,7 @@ header p {
 }
 
 .service-box {
-    background: var(--white-color);
+    background: #fff;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -170,17 +160,23 @@ header p {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     margin-top: 0;
-    color: var(--primary-color);
+    color: #004d99;
 }
 
+.service-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Sección Contacto */
 #contacto {
     padding: 2rem 0;
     text-align: center;
 }
 
 .contact-info {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+    background-color: #004d99;
+    color: #fff;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -192,59 +188,34 @@ header p {
     font-size: 1.1rem;
 }
 
-.whatsapp-button {
-    display: inline-block;
-    background-color: #25D366;
-    color: var(--white-color);
-    padding: 0.8rem 2rem;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: bold;
+/* Contenedor para alinear los botones de redes sociales */
+.social-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre los botones */
     margin-top: 1.5rem;
-    transition: background-color 0.3s ease;
 }
 
-.whatsapp-button:hover {
-    background-color: #128C7E;
-}
-
-.instagram-button {
+.social-button {
     display: inline-block;
-    background: #c13584;
-    color: var(--white-color);
-    padding: 0.8rem 2rem;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 1.5rem;
-    margin-left: 10px;
-    transition: background-color 0.3s ease;
+    width: 40px; /* Tamaño del icono (anteriormente 40px) */
+    height: 40px;
+    transition: transform 0.3s ease;
+    border-radius: 50%; /* Esto hace que los logos sean redondos */
+    overflow: hidden; /* Esto oculta las partes cuadradas que puedan quedar */
 }
 
-.instagram-button:hover {
-    background-color: #833ab4;
+.social-button:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
 }
 
-.facebook-button {
-    display: inline-block;
-    background: #2812cb;
-    color: var(--white-color);
-    padding: 0.8rem 2rem;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 1.5rem;
-    margin-left: 10px;
-    transition: background-color 0.3s ease;
+.social-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el área del círculo */
 }
 
-.facebook-button:hover {
-    background-color: #11056b;
-}
-
+/* Sección Medios de Pago */
 #metodos-pago {
     padding-top: 2rem;
     text-align: center;
@@ -253,7 +224,7 @@ header p {
 #metodos-pago h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: var(--white-color);
+    color: #fff;
     margin-bottom: 1rem;
 }
 
@@ -272,14 +243,16 @@ header p {
     border-radius: 20%;
 }
 
+/* Pie de Página */
 footer {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+    background-color: #004d99;
+    color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
 }
 
+/* Botón de WhatsApp Flotante */
 .whatsapp-flotante {
     position: fixed;
     bottom: 20px;
@@ -303,6 +276,70 @@ footer {
     width: 100%;
     height: auto;
 }
+
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+    header .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .header-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .menu-toggle {
+        display: block;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        z-index: 1001;
+    }
+    
+    header p {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 77, 153, 0.9);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        margin: 1rem 0;
+        display: block;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 1rem;
+        background-color: rgba(0,0,0,0.1);
+        color: #fff;
+    }
+}
+
 
 
 
