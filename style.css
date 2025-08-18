@@ -109,7 +109,7 @@ header p {
 
 /* Sección Hero */
 #hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Imagen/Fondo\ de\ solucion.jpeg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Imagen/Fondo\ de\ Portada.jpeg') no-repeat center center/cover;
     text-align: center;
     padding: 8rem 0;
     border-radius: 10px;
@@ -178,19 +178,19 @@ header p {
 }
 
 .camaras-de-frio {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/camara\ de\ frio.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/Fondo\ de\ camara\ y\ frezeers.jpeg') no-repeat center center/cover;
 }
 
 .camaras-de-frio:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('Imagen/camara\ de\ frio.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('Imagen/Fondo\ de\ camara\ y\ frezeers.jpeg') no-repeat center center/cover;
 }
 
 .freezers {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/Heladeras\ Industriales.jpeg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagen/Fondo\ de\ electricidad.jpeg') no-repeat center center/cover;
 }
 
 .freezers:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('Imagen/Heladeras\ Industriales.jpeg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('Imagen/Fondo\ de\ electricidad.jpeg') no-repeat center center/cover;
 }
 
 .service-link {
@@ -369,3 +369,4 @@ footer {
         color: #fff;
     }
 }
+
